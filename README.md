@@ -15,13 +15,13 @@ Download the zip (Press "Download ZIP"), and install it as a plugin in your word
 
 2) Use the following shortcode to implement the form in a wordpress page:
 
-[alpacaform
+\[alpacaform
   from_email="noreply@example.com"
   from_name="Nice Name"
   to_email="mail@example.com"
   subject="Form"
   form="declaration"
-  thankyou_message="Thanks for your submission!"]
+  thankyou_message="Thanks for your submission!"\]
   
 
 
