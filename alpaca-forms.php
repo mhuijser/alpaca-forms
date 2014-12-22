@@ -141,12 +141,11 @@ class AlpacaForms {
 	/**
 	 * Helper function for registering and enqueueing scripts and styles.
 	 *
-	 * @name	The 	ID to register with WordPress
+	 * @name			The ID to register with WordPress
 	 * @file_path		The path to the actual file
 	 * @is_script		Optional argument for if the incoming file_path is a JavaScript source file.
 	 */
 	private function load_file( $name, $file_path, $is_script = false ) {
-
 		$url = plugins_url($file_path, __FILE__);
 		$file = plugin_dir_path(__FILE__) . $file_path;
 
