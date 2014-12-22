@@ -5,6 +5,14 @@ alpaca-forms
 
 The alpaca-forms plugin is a small plugin for wordpress that generates a form on your page using alpacajs  (http://www.alpacajs.org/). On submission, the values of the form are gathered and mailed.
 
+Features:
+- field-dependencies;
+- field-validation;
+- form-validation;
+- send attachments;
+- dynamic addition of objectarrays (rows) in the form;
+- etc etc.
+
 # Installation
 
 Download the zip (Press "Download ZIP"), and install it as a plugin in your wordpress instance
@@ -23,8 +31,8 @@ Download the zip (Press "Download ZIP"), and install it as a plugin in your word
   form="declaration"
   thankyou_message="Thanks for your submission!"]`
   
-| argument       | meaning            | 
-| ------------- |:-------------:| 
+| argument       | meaning  | 
+| ------------- |-------------:| 
 | from_email      | from address used in the email | 
 | from_name    | from name used in the email |  
 | to_email | The emailadress that should receive the email with form data |
