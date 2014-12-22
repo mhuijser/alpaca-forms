@@ -134,7 +134,7 @@ class AlpacaForms {
 		$this->load_file( self::slug . '-customalpaca-style', '/css/alpaca.css' );
 
 		// JQuery price format
-		$this->load_file( self::slug . '-script', '/lib/jquery.price_format.2.0.min.js', true );
+		$this->load_file( self::slug . '-script', '/js/jquery/jquery.price_format.2.0.min.js', true );
 
 	} // end register_scripts_and_styles
 	
