@@ -7,7 +7,7 @@ The alpaca-forms plugin is a small plugin for wordpress that generates a form on
 
 # Installation
 
-Download the zip, and install it as a plugin in your wordpress instance
+Download the zip (Press "Download ZIP"), and install it as a plugin in your wordpress instance
 
 # Use
 
