@@ -19,11 +19,20 @@ Download the zip (Press "Download ZIP"), and install it as a plugin in your word
   from_email="noreply@example.com"
   from_name="Nice Name"
   to_email="mail@example.com"
-  subject="Form"
+  subject="Form data"
   form="declaration"
   thankyou_message="Thanks for your submission!"]`
   
+| argument       | meaning            | 
+| ------------- |:-------------:| 
+| from_email      | from address used in the email | 
+| from_name    | from name used in the email |  
+| to_email | The emailadress that should receive the email with form data |
+| subject | Subject of the email |
+| form | the name of the form. There should exist a corresponding js-file in the js-folder with this name |
+| thankyou_message | The message that will be displayed after form-submission |
   
+
   
 
 
