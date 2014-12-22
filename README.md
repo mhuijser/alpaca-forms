@@ -15,3 +15,5 @@ A small plugin for wordpress to make it easily possible to maintain some forms b
   thankyou_message="Thanks for your submission!"]
 
 
+Note: A field with name "email" will be added to the cc in the email that will be sent.
+
