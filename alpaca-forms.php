@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Alpaca Forms
-Plugin URI: http://mhuijser.nl
+Plugin URI: https://github.com/mhuijser/alpaca-forms
 Description: A small plugin to realize Alpaca driven forms in wordpress.
 Version: 0.1
 Author: mhuijser
@@ -222,7 +222,6 @@ class AlpacaForms {
 		$email->Subject   = $subject;
 		$email->Body      = $message;
 		$email->AddAddress( $to_email );
-
 
 		$email->isHTML(true);
 		$email->Send();
