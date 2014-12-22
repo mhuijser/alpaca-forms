@@ -32,7 +32,7 @@ Download the zip (Press "Download ZIP"), and install it as a plugin in your word
   thankyou_message="Thanks for your submission!"]`
   
 | argument       | meaning  | 
-| ------------- |-------------:| 
+| ------------- |:-------------| 
 | from_email      | from address used in the email | 
 | from_name    | from name used in the email |  
 | to_email | The emailadress that should receive the email with form data |
