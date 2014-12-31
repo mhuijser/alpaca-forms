@@ -25,7 +25,7 @@ License:
   
 */
 
-require_once('lib/class.phpmailer.php');
+require_once ABSPATH . WPINC . '/class-phpmailer.php';
 
 class AlpacaForms {
 
