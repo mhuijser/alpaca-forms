@@ -124,13 +124,13 @@ class AlpacaForms {
 		} // end if/else
 
 		// Alpaca depends on these Scripts/styles
-		$this->load_external_file( self::slug . '-handlebars-script', '//cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.3.0/handlebars.min.js', true );
+		$this->load_external_file( self::slug . '-handlebars-script', '//cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.3/handlebars.min.js', true );
 		$this->load_external_file( self::slug . '-bootstrap-style', '//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css' );
 		$this->load_external_file( self::slug . '-bootstrap-script', '//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js', true );
 
 		// Alpaca
-		$this->load_external_file( self::slug . '-basealpaca-style', '//code.cloudcms.com/alpaca/1.5.4/bootstrap/alpaca.min.css');
-		$this->load_external_file( self::slug . '-basealpaca-script', '//code.cloudcms.com/alpaca/1.5.4/bootstrap/alpaca.min.js', true );
+		$this->load_external_file( self::slug . '-basealpaca-style', '//code.cloudcms.com/alpaca/1.5.11/bootstrap/alpaca.min.css');
+		$this->load_external_file( self::slug . '-basealpaca-script', '//code.cloudcms.com/alpaca/1.5.11/bootstrap/alpaca.min.js', true );
 		$this->load_file( self::slug . '-customalpaca-style', '/css/alpaca.css' );
 
 		// JQuery price format
@@ -211,7 +211,6 @@ class AlpacaForms {
     </html>
   ';
 
-		// Now, add the attachments ...
 		foreach ($_FILES as $key => $value) {
 			$email->AddAttachment( $value['tmp_name'], $value['name']);
 		}
@@ -223,7 +222,7 @@ class AlpacaForms {
 		$email->AddAddress( $to_email );
 
 		$email->isHTML(true);
-		$email->Send();
+		//$email->Send();
 	}
   
 } // end class

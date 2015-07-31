@@ -4,7 +4,9 @@
 jQuery.alpaca.registerMessages({
    "disallowValue": "{0} zijn niet toegestane waarden.",
    "notOptional": "Dit veld is verplicht.",
-   "invalidEmail": "Verkeerd emailadres. Bijvoorbeeld: info@rafaelalmere.nl"
+   "invalidEmail": "Verkeerd emailadres. Bijvoorbeeld: info@jouw.domein.nl",
+   "invalidPattern": "Geen goede invoer. IBAN Formaat: NL44RABO0123456789",
+   "addItemButtonLabel" : "Voeg een nieuwe declaratieregel toe",
 });
 
 jQuery(document).ready(function() {
@@ -123,35 +125,49 @@ jQuery(document).ready(function() {
           "fields": {
               "naam": {
                   "size": 20,
-                  "placeholder": "Jozef Jacobsen"
+                  "placeholder": "Jozef Jacobsen",
+                  "order": 1
               },
               "adres": {
                   "size": 20,
-                  "placeholder": "De sphinx 12"
+                  "placeholder": "De sphinx 12",
+                  "order": 2
               },
               "postcode": {
                   "size": 12,
-                  "placeholder": "1320 AA"
+                  "placeholder": "1320 AA",
+                  "order": 3
               },
               "woonplaats": {
                   "size": 20,
-                  "placeholder": "Cairo"
+                  "placeholder": "Cairo",
+                  "order": 4
+              },
+              "email": {
+                  "size": 20,
+                  "placeholder": "",
+                  "order": 5
               },
               "datum": {
-                  "size": 20
+                  "size": 20,
+                  "order": 6
               },
               "betaalwijze": {
                   "type" : "select",
-                  "emptySelectFirst": true
+                  "emptySelectFirst": true,
+                  "order": 7
               },
               "rekeningnummer" : {
                   "dependencies": {
                       "betaalwijze": "Bank"
                   },
-                  "size": 20
+                  "size": 20,
+                  "order": 8
               },
               "declaratieregels" : {
                   "label": "Declaratieregels",
+                  "order": 9,
+                  "toolbarSticky": true,
                   "items": {
                       "addItemLabel": "Voeg een declaratieregel toe"
                   },
@@ -176,6 +192,13 @@ jQuery(document).ready(function() {
                               }
                           }
                       }
+                  },
+                  "hideToolbarWithChildren": false,
+                  "actionbar": {
+                    "actions": [{
+                        "action": "add",
+                        "enabled": false
+                    }]
                   }
               }
           }
